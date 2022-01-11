@@ -1,0 +1,8 @@
+.header img {
+    padding-top: 15px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #fff;
+}
