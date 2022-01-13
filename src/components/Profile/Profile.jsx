@@ -4,7 +4,7 @@ import MyPosts from '../Profile/MyPosts/MyPosts'
 
 const Profile = () => {
     return (
-        <div className='content'>
+        <div>
             <div>
                  <img src={require ( "../img/react_img.jpg")} alt="react_img"/>
            </div>
