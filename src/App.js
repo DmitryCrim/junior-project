@@ -8,6 +8,10 @@ import {Routes, Route, Link} from "react-router-dom";
 
 
 function App(props) {
+    // let posts = [
+    //     {id: 1, message: "Hello, glad to see you", likesCount: 12},
+    //     {id: 2, message: "Best props", likesCount: 15},
+    // ]
   return (
 
           <div className="app-wrapper">
@@ -15,8 +19,12 @@ function App(props) {
               <Navbar/>
               <div  className="app-wrapper-content">
                   <Routes>
-                      <Route path="/dialogs" element = {<Dialogs />} />
-                      <Route path="/profile" element = {<Profile />} />
+                      {/*<Route path="/dialogs" element = {<Dialogs />} />*/}
+                      {/*<Route path="/" element={<Profile posts={props.posts} />} />*/}
+                      <Route path="/dialogs/" element={<Dialogs dialogs={props.dialogs} messages={props.messages} />} />
+
+                      {/*<Route path='/dialogs' element={<Dialogs dialogData={props.dialogData} messagesData={props.messagesData} />}/>*/}
+                      <Route path='/profile' element={<Profile posts={props.posts}/>}/>
                       {/*<Route path="/news" element = {<News />} />*/}
                       {/*<Route path="/music" element = {<Music />} />*/}
                       {/*<Route path="/settings" element = {<Settings />} />*/}
@@ -26,8 +34,7 @@ function App(props) {
 
                   {/*<Route path="/dialogs" component ={Dialogs} />*/}
                   {/*<Route path="/profile" component = {Profile} />*/}
-                  {/*<Dialogs/>*/}
-                  {/*<Profile/>*/}
+
               </div>
           </div>
        )

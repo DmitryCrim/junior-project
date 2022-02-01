@@ -1,17 +1,23 @@
 import React from "react";
 import s from './Profile.module.css'
 import MyPosts from '../Profile/MyPosts/MyPosts'
+import ProfileInfo from './ProfileInfo/ProfileInfo'
 
-const Profile = () => {
+const Profile = (props) => {
+
+
+    // let posts = [
+    //     {id: 1, message: "Hello, glad to see you", likesCount: 12},
+    //     {id: 2, message: "Best props", likesCount: 15},
+    // ]
+
+
+
     return (
         <div>
-            <div>
-                 <img src={require ( "../img/react_img.jpg")} alt="react_img"/>
-           </div>
-                <div >
-                    <img  className= {s.ava_person} src={require ( "../img/ava_min.jpg")} alt="ava_person"/>
-                </div>
-          <MyPosts/>
+            <ProfileInfo />
+
+          <MyPosts posts={props.posts} />
         </div>
     )
 }

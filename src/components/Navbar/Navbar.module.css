@@ -1,8 +1,9 @@
 .nav {
     grid-area: nav;
+    padding: 40px;
 }
 
-.item {
+.item a{
     color: orange;
     text-decoration: none;
     font-size: 25px;
