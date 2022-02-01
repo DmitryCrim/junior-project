@@ -16,6 +16,8 @@ const Navbar = () => {
             <div className={b.item}><Link  to="/news">News</Link></div>
             <div className={b.item}><Link to="/music">Music</Link></div>
             <div className={b.item}><Link to="/settings">Settings</Link></div>
+
+            <div className={b.item}><Link to="/friends"> Friends </Link></div>
         </nav>
     )
 }

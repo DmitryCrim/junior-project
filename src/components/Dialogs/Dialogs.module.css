@@ -19,3 +19,9 @@
 .dialogs {
     color: white;
 }
+
+.ava_person {
+    border-radius: 80px;
+    width: 20px;
+
+}

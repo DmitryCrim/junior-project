@@ -4,13 +4,18 @@ import s from './../Dialogs.module.css'
 // import {Router, Route, NavLink} from "react-router-dom"
 
 
-
 const Message = (props) => {
     return (
-        <div className={s.messege}>{props.message}</div>
+        <div>
+            <div className={s.messege}>
+                <li>{props.message}</li>
+            </div>
+
+
+        </div>
+
     )
 }
-
 
 
 export default Message;
