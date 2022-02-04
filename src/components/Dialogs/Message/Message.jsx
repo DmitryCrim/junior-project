@@ -7,9 +7,11 @@ import s from './../Dialogs.module.css'
 const Message = (props) => {
     return (
         <div>
-            <div className={s.messege}>
+
+            <div className={s.message}>
                 <li>{props.message}</li>
             </div>
+
 
 
         </div>
